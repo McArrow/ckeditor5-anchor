@@ -1,0 +1,24 @@
+@import "@ckeditor/ckeditor5-ui/theme/mixins/_rwd.css";
+.ck.ck-anchor-form {
+  display: flex;
+  & .ck-label {
+    display: none;
+  }
+  @mixin ck-media-phone {
+    flex-wrap: wrap;
+    & .ck-labeled-field-view {
+      flex-basis: 100%;
+    }
+    & .ck-button {
+      flex-basis: 50%;
+    }
+  }
+}
+
+/*
+ * Style anchor form differently when manual decorators are available.
+ */
+
+.ck.ck-anchor-form_layout-vertical {
+  display: block;
+}
