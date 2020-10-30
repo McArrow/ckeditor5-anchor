@@ -13,7 +13,6 @@ import KeystrokeHandler from '@ckeditor/ckeditor5-utils/src/keystrokehandler';
 
 import unanchorIcon from '../../theme/icons/unanchor.svg';
 import pencilIcon from '@ckeditor/ckeditor5-core/theme/icons/pencil.svg';
-import '../../theme/anchoractions.css';
 
 /**
  * The anchor actions view class. This view displays the anchor preview, allows
@@ -95,7 +94,7 @@ export default class AnchorActionsView extends View {
       attributes: {
         class: [
           'ck',
-          'ck-anchor-actions'
+          'ck-link-actions'
         ],
         tabindex: '-1'
       },

@@ -18,7 +18,6 @@ import KeystrokeHandler from '@ckeditor/ckeditor5-utils/src/keystrokehandler';
 
 import checkIcon from '@ckeditor/ckeditor5-core/theme/icons/check.svg';
 import cancelIcon from '@ckeditor/ckeditor5-core/theme/icons/cancel.svg';
-import '../../theme/anchorform.css';
 
 /**
  * The anchor form view controller class.
@@ -127,10 +126,10 @@ export default class AnchorFormView extends View {
       }
     });
 
-    const classList = ['ck', 'ck-anchor-form'];
+    const classList = ['ck', 'ck-link-form'];
 
     if (anchorCommand.manualDecorators.length) {
-      classList.push('ck-anchor-form_layout-vertical');
+      classList.push('ck-link-form_layout-vertical');
     }
 
     this.setTemplate({

@@ -8,7 +8,6 @@ import UnanchorCommand from './unanchorcommand';
 import { createAnchorElement } from './utils';
 import bindTwoStepCaretToAttribute from '@ckeditor/ckeditor5-engine/src/utils/bindtwostepcarettoattribute';
 import findAnchorRange from './findanchorrange';
-import '../theme/anchor.css';
 
 const HIGHLIGHT_CLASS = 'ck-anchor_selected';
 
