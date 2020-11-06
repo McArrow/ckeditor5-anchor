@@ -19,7 +19,7 @@ export function isAnchorElement(node) {
  * @returns {module:engine/view/attributeelement~AttributeElement}
  */
 export function createAnchorElement(name, writer) {
-  const anchorElement = writer.createAttributeElement('a', { name, id: name }, { priority: 5 });
+  const anchorElement = writer.createAttributeElement('a', { id: name }, { priority: 5 });
   writer.addClass("ck-anchor", anchorElement);
   writer.setCustomProperty('anchor', true, anchorElement);
 
